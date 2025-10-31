@@ -73,26 +73,50 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
   return (
     <div className="pt-20">
-      
-<section
-  className="relative w-full h-[90vh] md:h-screen flex items-center justify-center bg-black overflow-hidden"
+      <section
   style={{
     backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
+    height: "90vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "white",
+    textAlign: "center",
+    position: "relative",
   }}
 >
-  <div className="absolute inset-0 bg-black/50"></div>
+  {/* Dark overlay */}
+  <div
+    style={{
+      position: "absolute",
+      inset: 0,
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 1,
+    }}
+  ></div>
 
-  <div className="relative z-10 px-4 sm:px-6 text-center text-white max-w-3xl">
-    <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4 leading-tight">
+  {/* Text content */}
+  <div style={{ zIndex: 2, padding: "0 20px" }}>
+    <h1 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "10px" }}>
       Bhanushali Associates
     </h1>
-    <p className="text-base sm:text-lg md:text-2xl mb-6 text-gray-200">
+    <p style={{ fontSize: "1.2rem", marginBottom: "20px" }}>
       Your Trusted Legal Partners in Justice
     </p>
-    <button className="bg-[#D4AF37] hover:bg-[#c19d33] text-black font-semibold py-3 px-8 rounded-lg text-lg sm:text-xl transition-transform transform hover:scale-105">
+    <button
+      style={{
+        backgroundColor: "#D4AF37",
+        color: "black",
+        fontWeight: "600",
+        padding: "12px 24px",
+        border: "none",
+        borderRadius: "6px",
+        cursor: "pointer",
+      }}
+    >
       Book a Consultation
     </button>
   </div>
