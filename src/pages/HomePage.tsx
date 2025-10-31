@@ -74,60 +74,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div className="pt-20">
       <section
+  className="relative w-full h-[90vh] flex items-center justify-center bg-black"
   style={{
     backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundSize: "contain",   // shows full image
     backgroundRepeat: "no-repeat",
-    height: "90vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    color: "white",
-    textAlign: "center",
-    position: "relative",
-  }}
->
-  {/* Dark overlay */}
-  <div
-    style={{
-      position: "absolute",
-      inset: 0,
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
-      zIndex: 1,
-    }}
-  ></div>
-
-  {/* Text content */}
-  <div style={{ zIndex: 2, padding: "0 20px" }}>
-    <h1 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "10px" }}>
-      Bhanushali Associates
-    </h1>
-    <p style={{ fontSize: "1.2rem", marginBottom: "20px" }}>
-      Your Trusted Legal Partners in Justice
-    </p>
-    <button
-      style={{
-        backgroundColor: "#D4AF37",
-        color: "black",
-        fontWeight: "600",
-        padding: "12px 24px",
-        border: "none",
-        borderRadius: "6px",
-        cursor: "pointer",
-      }}
-    >
-      Book a Consultation
-    </button>
-  </div>
-</section>
-        <section
-  className="relative w-full h-[90vh] md:h-screen flex items-center justify-center bg-black overflow-hidden"
-  style={{
-    backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
-    backgroundSize: "cover",
     backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
   }}
 >
   <div className="absolute inset-0 bg-black/50"></div>
