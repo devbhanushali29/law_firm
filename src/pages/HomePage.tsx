@@ -74,6 +74,29 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div className="pt-20">
       
+<section
+  className="relative w-full h-[90vh] md:h-screen flex items-center justify-center bg-black overflow-hidden"
+  style={{
+    backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  <div className="relative z-10 px-4 sm:px-6 text-center text-white max-w-3xl">
+    <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4 leading-tight">
+      Bhanushali Associates
+    </h1>
+    <p className="text-base sm:text-lg md:text-2xl mb-6 text-gray-200">
+      Your Trusted Legal Partners in Justice
+    </p>
+    <button className="bg-[#D4AF37] hover:bg-[#c19d33] text-black font-semibold py-3 px-8 rounded-lg text-lg sm:text-xl transition-transform transform hover:scale-105">
+      Book a Consultation
+    </button>
+  </div>
+</section>
         <section
   className="relative w-full h-[90vh] md:h-screen flex items-center justify-center bg-black overflow-hidden"
   style={{
