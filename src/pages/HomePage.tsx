@@ -73,9 +73,16 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
   return (
     <div className="pt-20">
-      <section className="relative h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center" style={{
-        backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')"
-      }}>
+      <section
+  className="relative w-full h-[90vh] flex items-center justify-center bg-black"
+  style={{
+    backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
+    backgroundSize: "contain",   // shows full image
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
