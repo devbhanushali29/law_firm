@@ -76,7 +76,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section
   className="relative w-full h-[90vh] flex items-center justify-center bg-black"
   style={{
-    backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
+    backgroundImage: "url('/hero-bg.png')",
     backgroundSize: "contain",   // shows full image
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
