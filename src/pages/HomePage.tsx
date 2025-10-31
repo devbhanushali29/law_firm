@@ -64,44 +64,53 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     }
   ];
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="pt-20">
-      <section className="relative bg-gradient-to-br from-[#0A1F44] via-[#0D2952] to-[#0A1F44] text-white py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(212,175,55,.1) 35px, rgba(212,175,55,.1) 70px)'
-          }}></div>
-        </div>
+      <section className="relative h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center" style={{
+        backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')"
+      }}>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center">
-            <div className="inline-block mb-6">
-              <div className="h-1 w-20 bg-[#D4AF37] mx-auto mb-6"></div>
-            </div>
-            <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6">
-              Bhanushali Associates
-            </h1>
-            <p className="text-xl md:text-2xl text-[#D4AF37] font-light mb-8 italic">
-              Your Trusted Legal Partners in Justice
-            </p>
-            <p className="text-lg md:text-xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Delivering excellence in legal services with integrity, dedication, and a commitment to justice since our inception.
-            </p>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-8 animate-fade-in">
+            <div className="h-1 w-20 bg-[#D4AF37] mx-auto mb-8"></div>
+          </div>
+          <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+            Bhanushali Associates<br />Law Firm
+          </h1>
+          <p className="text-xl md:text-2xl text-[#D4AF37] font-light mb-12 italic drop-shadow-lg">
+            Your Trusted Legal Partner in Justice
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button
-              onClick={() => onNavigate('contact')}
-              className="bg-[#D4AF37] text-[#0A1F44] px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#C4A137] transition-all duration-300 shadow-lg hover:shadow-2xl inline-flex items-center space-x-2 group"
+              onClick={() => scrollToSection('contact-section')}
+              className="bg-[#D4AF37] text-[#0A1F44] px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#C4A137] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 inline-flex items-center justify-center space-x-2 group"
             >
               <span>Book Consultation</span>
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <div className="mt-8">
-              <div className="h-1 w-20 bg-[#D4AF37] mx-auto"></div>
-            </div>
+            <button
+              onClick={() => scrollToSection('about-section')}
+              className="bg-[#0A1F44] text-white border-2 border-[#D4AF37] px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#D4AF37] hover:text-[#0A1F44] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 inline-flex items-center justify-center space-x-2"
+            >
+              <span>Learn More</span>
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          </div>
+          <div className="mt-12">
+            <div className="h-1 w-20 bg-[#D4AF37] mx-auto"></div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section id="about-section" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#0A1F44] mb-4">
@@ -250,7 +259,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-[#0A1F44] to-[#0D2952] text-white">
+      <section id="contact-section" className="py-16 bg-gradient-to-br from-[#0A1F44] to-[#0D2952] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-6">
             Need Legal Assistance?
@@ -266,11 +275,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               Book Consultation
             </button>
             <a
-              href="tel:+917021029328"
+              href="https://wa.me/917021029328"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-[#0A1F44] px-8 py-4 rounded-md font-semibold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-2xl inline-flex items-center justify-center space-x-2"
             >
-              <Phone className="h-5 w-5" />
-              <span>Call Now</span>
+              <span>Chat on WhatsApp</span>
             </a>
           </div>
         </div>
