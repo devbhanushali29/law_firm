@@ -73,7 +73,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
   return (
     <div className="pt-20">
-      <section
+    <section
   style={{
     backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
     backgroundSize: "cover",
@@ -101,23 +101,23 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   {/* Text content */}
   <div style={{ zIndex: 2, padding: "0 20px" }}>
     <h1 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "10px" }}>
-      Bhanushali Associates
+      Bhanushali Associates Law Firm
     </h1>
-    <p style={{ fontSize: "1.2rem", marginBottom: "20px" }}>
+    <p style={{ fontSize: "1.1rem", marginBottom: "20px" }}>
       Your Trusted Legal Partners in Justice
     </p>
     <button
       style={{
         backgroundColor: "#D4AF37",
-        color: "black",
+        color: "#0A1F44",
         fontWeight: "600",
-        padding: "12px 24px",
+        padding: "12px 28px",
         border: "none",
         borderRadius: "6px",
         cursor: "pointer",
       }}
     >
-      Book a Consultation
+      Book Consultation
     </button>
   </div>
 </section>
