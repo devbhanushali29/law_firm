@@ -73,7 +73,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
   return (
     <div className="pt-20">
-      <section
+     <section
   className="relative w-full h-[90vh] sm:h-[100vh] flex items-center justify-center bg-black"
   style={{
     backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
@@ -82,10 +82,10 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     backgroundPosition: "center",
   }}
 >
-  {/* Mobile-specific overlay to darken more for readability */}
+  {/* Overlay */}
   <div className="absolute inset-0 bg-black/40 sm:bg-black/30"></div>
 
-  {/* Content wrapper */}
+  {/* Content */}
   <div className="relative z-10 text-center px-4 sm:px-0">
     <h1 className="text-white text-3xl sm:text-6xl font-bold mb-4">
       Bhanushali Associates Law Firm
