@@ -73,69 +73,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
   return (
     <div className="pt-20">
-    <section
-  style={{
-    backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    height: "90vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    color: "white",
-    textAlign: "center",
-    position: "relative",
-  }}
->
-  {/* Dark overlay */}
-  <div
-    style={{
-      position: "absolute",
-      inset: 0,
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
-      zIndex: 1,
-    }}
-  ></div>
-
-  {/* Text content */}
-  <div style={{ zIndex: 2, padding: "0 20px" }}>
-    <h1 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "10px" }}>
-      Bhanushali Associates Law Firm
-    </h1>
-    <p style={{ fontSize: "1.1rem", marginBottom: "20px" }}>
-      Your Trusted Legal Partners in Justice
-    </p>
-    <button
-      style={{
-        backgroundColor: "#D4AF37",
-        color: "#0A1F44",
-        fontWeight: "600",
-        padding: "12px 28px",
-        border: "none",
-        borderRadius: "6px",
-        cursor: "pointer",
-      }}
-    >
-      Book Consultation
-    </button>
-  </div>
-</section>
-  <div className="absolute inset-0 bg-black/50"></div>
-
-  <div className="relative z-10 px-4 sm:px-6 text-center text-white max-w-3xl">
-    <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4 leading-tight">
-      Bhanushali Associates
-    </h1>
-    <p className="text-base sm:text-lg md:text-2xl mb-6 text-gray-200">
-      Your Trusted Legal Partners in Justice
-    </p>
-    <button className="bg-[#D4AF37] hover:bg-[#c19d33] text-black font-semibold py-3 px-8 rounded-lg text-lg sm:text-xl transition-transform transform hover:scale-105">
-      Book a Consultation
-    </button>
-  </div>
-</section>
-  <div className="absolute inset-0 bg-black/40"></div>
+      <section className="relative h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center" style={{
+        backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')"
+      }}>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
