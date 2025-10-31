@@ -74,14 +74,30 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div className="pt-20">
       <section
-  className="relative w-full h-[90vh] flex items-center justify-center bg-black"
+  className="relative w-full h-[90vh] sm:h-[100vh] flex items-center justify-center bg-black"
   style={{
     backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
-    backgroundSize: "contain",   // shows full image
+    backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
   }}
 >
+  {/* Mobile-specific overlay to darken more for readability */}
+  <div className="absolute inset-0 bg-black/40 sm:bg-black/30"></div>
+
+  {/* Content wrapper */}
+  <div className="relative z-10 text-center px-4 sm:px-0">
+    <h1 className="text-white text-3xl sm:text-6xl font-bold mb-4">
+      Bhanushali Associates Law Firm
+    </h1>
+    <p className="text-gray-200 text-sm sm:text-lg mb-6">
+      Your Trusted Legal Partner in Justice
+    </p>
+    <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg text-sm sm:text-base transition-all duration-300">
+      Book Consultation
+    </button>
+  </div>
+</section>
   <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"></div>
 
