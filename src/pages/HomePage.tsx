@@ -74,28 +74,27 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div className="pt-20">
       <section
-  className="relative w-full h-[90vh] flex items-center justify-center bg-black"
+  className="relative w-full h-[90vh] min-h-[600px] flex items-end md:items-center justify-center bg-black overflow-hidden"
   style={{
-    backgroundImage: "url('/hero-bg.png')",
-    backgroundSize: "contain",   // shows full image
+    backgroundImage: "url('/images/hero.jpg')",
+    backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
   }}
 >
-  <div className="absolute inset-0 bg-black/40"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/60"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-8 animate-fade-in">
-            <div className="h-1 w-20 bg-[#D4AF37] mx-auto mb-8"></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-0 text-center md:text-center">
+          <div className="mb-6 animate-fade-in">
+            <div className="h-1 w-20 bg-[#D4AF37] mx-auto mb-6"></div>
           </div>
-          <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+          <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-2xl">
             Bhanushali Associates<br />Law Firm
           </h1>
-          <p className="text-xl md:text-2xl text-[#D4AF37] font-light mb-12 italic drop-shadow-lg">
+          <p className="text-lg sm:text-xl md:text-2xl text-[#D4AF37] font-light mb-8 italic drop-shadow-2xl">
             Your Trusted Legal Partner in Justice
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => scrollToSection('contact-section')}
               className="bg-[#D4AF37] text-[#0A1F44] px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#C4A137] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 inline-flex items-center justify-center space-x-2 group"
@@ -111,7 +110,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <ArrowRight className="h-5 w-5" />
             </button>
           </div>
-          <div className="mt-12">
+          <div className="mt-8">
             <div className="h-1 w-20 bg-[#D4AF37] mx-auto"></div>
           </div>
         </div>
@@ -209,9 +208,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/Generated Image September 24, 2025 - 6_33PM.png"
-                alt="Advocate Karan Bhanushali"
-                className="rounded-lg shadow-2xl w-full"
+                src="/images/founder.jpg"
+                alt="Adv. Karan Bhanushali"
+                className="rounded-lg shadow-2xl w-full object-cover"
               />
             </div>
             <div>
@@ -219,7 +218,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 Meet the Founder
               </h2>
               <div className="h-1 w-20 bg-[#D4AF37] mb-6"></div>
-              <h3 className="text-2xl font-semibold text-[#D4AF37] mb-4">Advocate Karan Bhanushali</h3>
+              <h3 className="text-2xl font-semibold text-[#D4AF37] mb-2">Adv. Karan Bhanushali</h3>
+              <p className="text-lg text-gray-600 mb-4 font-medium">Founder & Managing Partner</p>
+              <p className="text-lg text-[#0A1F44] mb-6 font-semibold">Bhanushali Associates Law Firm</p>
               <p className="text-gray-700 leading-relaxed mb-6">
                 With years of dedicated legal practice, Advocate Karan Bhanushali has established himself as a trusted name in the legal community.
                 His commitment to justice, combined with deep legal expertise across multiple domains, has helped countless clients navigate complex legal challenges successfully.

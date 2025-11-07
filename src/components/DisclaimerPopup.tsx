@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { X } from 'lucide-react';
 
 interface DisclaimerPopupProps {
   onAgree: () => void;
@@ -13,7 +12,7 @@ export default function DisclaimerPopup({ onAgree }: DisclaimerPopupProps) {
   }, []);
 
   const handleDisagree = () => {
-    window.close();
+    window.location.href = 'https://google.com';
   };
 
   const handleAgree = () => {
@@ -25,80 +24,73 @@ export default function DisclaimerPopup({ onAgree }: DisclaimerPopupProps) {
     <div className={`fixed inset-0 z-50 transition-opacity duration-500 ${
       isAnimating ? 'opacity-100' : 'opacity-0'
     }`}>
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/Generated Image September 24, 2025 - 6_21PM.png')",
-          filter: 'blur(2px) brightness(0.5)'
-        }}
-      ></div>
-
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
 
       <div className="relative h-full flex items-center justify-center p-4">
-        <div className={`bg-[#0A1F44] rounded-lg shadow-2xl max-w-4xl w-full flex flex-col md:flex-row overflow-hidden transition-all duration-700 ${
+        <div className={`bg-[#0A1F44] rounded-lg shadow-2xl max-w-5xl w-full flex flex-col md:flex-row overflow-hidden transition-all duration-700 ${
           isAnimating ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
         }`}>
-          <div className="md:w-1/3 bg-gradient-to-b from-[#0D2952] to-[#0A1F44] p-8 flex flex-col items-center justify-center text-center">
+          <div className="md:w-1/3 bg-[#0A1F44] p-8 md:p-12 flex flex-col items-center justify-center text-center relative">
             <img
-              src="/logo.png"
+              src="/images/logo.png"
               alt="Bhanushali Associates"
-              className="h-32 w-32 object-contain mb-4"
+              className="h-40 w-40 object-contain mb-6"
             />
-            <h2 className="text-[#D4AF37] font-playfair text-2xl font-bold">
-              Bhanushali Associates
-            </h2>
-            <p className="text-white/70 text-sm mt-2">Law Firm</p>
+            <div className="absolute right-0 top-0 bottom-0 w-px bg-[#D4AF37] hidden md:block"></div>
           </div>
 
-          <div className="md:w-2/3 p-8 md:p-12 flex flex-col justify-center overflow-y-auto max-h-96 md:max-h-none">
-            <h3 className="text-[#D4AF37] font-playfair text-3xl font-bold mb-6">
+          <div className="md:w-2/3 p-8 md:p-12 flex flex-col justify-center overflow-y-auto max-h-96 md:max-h-none bg-[#0A1F44]">
+            <h3 className="text-white font-playfair text-3xl md:text-4xl font-bold mb-6">
               Disclaimer
             </h3>
 
-            <div className="text-white/90 space-y-4 text-sm md:text-base leading-relaxed">
+            <div className="text-white/80 space-y-4 text-sm md:text-base leading-relaxed">
               <p>
-                The Bar Council of India does not permit solicitation of work and advertising by legal practitioners and advocates. By accessing the Bhanushali Associates Law Firm website (our "Website"), you acknowledge and confirm that:
+                The Bar Council of India does not permit solicitation of work and advertising by legal practitioners and advocates. By accessing the Bhanushali Associates Law Firm website (our "Site"), the user acknowledges that:
               </p>
 
-              <ul className="space-y-3 pl-4">
+              <ul className="space-y-3 pl-0">
                 <li className="flex items-start">
-                  <span className="text-[#D4AF37] mr-3 flex-shrink-0">•</span>
-                  <span>You wish to gain more information about us for your own information and use.</span>
+                  <span className="text-white/80 mr-3 flex-shrink-0">•</span>
+                  <span>The user wishes to gain more information about us for their own use.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#D4AF37] mr-3 flex-shrink-0">•</span>
-                  <span>There has been no solicitation, invitation, or advertisement of any sort by us or any of our members.</span>
+                  <span className="text-white/80 mr-3 flex-shrink-0">•</span>
+                  <span>There has been no attempt by us to advertise or solicit work.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#D4AF37] mr-3 flex-shrink-0">•</span>
-                  <span>Any information obtained or downloaded from this website does not create a lawyer–client relationship.</span>
+                  <span className="text-white/80 mr-3 flex-shrink-0">•</span>
+                  <span>Any information obtained or downloaded from our Site does not create a client–attorney relationship.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#D4AF37] mr-3 flex-shrink-0">•</span>
-                  <span>None of the information on this website should be construed as legal advice.</span>
+                  <span className="text-white/80 mr-3 flex-shrink-0">•</span>
+                  <span>Nothing on this website amounts to legal advice or opinion.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#D4AF37] mr-3 flex-shrink-0">•</span>
-                  <span>All content on this website is the intellectual property of Bhanushali Associates Law Firm.</span>
+                  <span className="text-white/80 mr-3 flex-shrink-0">•</span>
+                  <span>Our website uses cookies to improve your experience. By using our site, you agree to our Privacy Policy.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-white/80 mr-3 flex-shrink-0">•</span>
+                  <span>All content on this website is the intellectual property of the Firm.</span>
                 </li>
               </ul>
 
-              <p className="pt-4 border-t border-[#D4AF37]/30">
-                Clicking "Agree" means you acknowledge the above and wish to proceed to view the website.
+              <p className="pt-2">
+                Click <a href="/disclaimer" className="text-[#D4AF37] underline hover:text-[#C4A137]">here</a> for important public notice from the Firm.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-8 pt-6 border-t border-[#D4AF37]/30">
+            <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
               <button
                 onClick={handleDisagree}
-                className="flex-1 px-6 py-3 border-2 border-[#D4AF37] text-[#D4AF37] rounded-md font-semibold hover:bg-[#D4AF37]/10 transition-all duration-300"
+                className="px-8 py-3 border-2 border-white/30 text-white rounded-md font-semibold hover:bg-white/10 transition-all duration-300"
               >
                 Disagree
               </button>
               <button
                 onClick={handleAgree}
-                className="flex-1 px-6 py-3 bg-[#D4AF37] text-[#0A1F44] rounded-md font-semibold hover:bg-[#C4A137] transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="px-8 py-3 bg-[#D4AF37] text-[#0A1F44] rounded-md font-semibold hover:bg-[#C4A137] transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Agree
               </button>
