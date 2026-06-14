@@ -33,7 +33,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => onNavigate('home')}>
-            <img src="/logo.png" alt="Bhanushali Associates" className="h-12 w-12 object-contain" />
+            <img src="/images/logo.png" alt="Bhanushali Associates" className="h-12 w-12 object-contain" />
             <div>
               <h1 className="text-[#D4AF37] font-playfair text-xl font-bold">Bhanushali Associates</h1>
               <p className="text-white/80 text-xs">Law Firm</p>
