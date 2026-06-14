@@ -11,7 +11,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img src="/images/logo.png" alt="Bhanushali Associates" className="h-12 w-12 object-contain" />
+              <img src="/logo.png" alt="Bhanushali Associates" className="h-12 w-12 object-contain" />
               <div>
                 <h3 className="text-[#D4AF37] font-playfair text-lg font-bold">Bhanushali Associates</h3>
                 <p className="text-white/80 text-xs">Law Firm</p>

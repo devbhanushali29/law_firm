@@ -64,59 +64,44 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     }
   ];
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="pt-20">
-      <section
-  className="relative w-full h-[90vh] min-h-[600px] flex items-end md:items-center justify-center bg-black overflow-hidden"
-  style={{
-    backgroundImage: "url('/images/hero.jpg')",
-    backgroundSize: "contain",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-  }}
->
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/60"></div>
+      <section className="relative bg-gradient-to-br from-[#0A1F44] via-[#0D2952] to-[#0A1F44] text-white py-20 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(212,175,55,.1) 35px, rgba(212,175,55,.1) 70px)'
+          }}></div>
+        </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-0 text-center md:text-center">
-          <div className="mb-6 animate-fade-in">
-            <div className="h-1 w-20 bg-[#D4AF37] mx-auto mb-6"></div>
-          </div>
-          <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-2xl">
-            Bhanushali Associates<br />Law Firm
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-[#D4AF37] font-light mb-8 italic drop-shadow-2xl">
-            Your Trusted Legal Partner in Justice
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center">
+            <div className="inline-block mb-6">
+              <div className="h-1 w-20 bg-[#D4AF37] mx-auto mb-6"></div>
+            </div>
+            <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6">
+              Bhanushali Associates
+            </h1>
+            <p className="text-xl md:text-2xl text-[#D4AF37] font-light mb-8 italic">
+              Your Trusted Legal Partners in Justice
+            </p>
+            <p className="text-lg md:text-xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed">
+              Delivering excellence in legal services with integrity, dedication, and a commitment to justice since our inception.
+            </p>
             <button
-              onClick={() => scrollToSection('contact-section')}
-              className="bg-[#D4AF37] text-[#0A1F44] px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#C4A137] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 inline-flex items-center justify-center space-x-2 group"
+              onClick={() => onNavigate('contact')}
+              className="bg-[#D4AF37] text-[#0A1F44] px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#C4A137] transition-all duration-300 shadow-lg hover:shadow-2xl inline-flex items-center space-x-2 group"
             >
               <span>Book Consultation</span>
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button
-              onClick={() => scrollToSection('about-section')}
-              className="bg-[#0A1F44] text-white border-2 border-[#D4AF37] px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#D4AF37] hover:text-[#0A1F44] transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 inline-flex items-center justify-center space-x-2"
-            >
-              <span>Learn More</span>
-              <ArrowRight className="h-5 w-5" />
-            </button>
-          </div>
-          <div className="mt-8">
-            <div className="h-1 w-20 bg-[#D4AF37] mx-auto"></div>
+            <div className="mt-8">
+              <div className="h-1 w-20 bg-[#D4AF37] mx-auto"></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="about-section" className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#0A1F44] mb-4">
@@ -208,9 +193,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/images/founder.jpg"
-                alt="Adv. Karan Bhanushali"
-                className="rounded-lg shadow-2xl w-full object-cover"
+                src="/Generated Image September 24, 2025 - 6_33PM.png"
+                alt="Advocate Karan Bhanushali"
+                className="rounded-lg shadow-2xl w-full"
               />
             </div>
             <div>
@@ -218,9 +203,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 Meet the Founder
               </h2>
               <div className="h-1 w-20 bg-[#D4AF37] mb-6"></div>
-              <h3 className="text-2xl font-semibold text-[#D4AF37] mb-2">Adv. Karan Bhanushali</h3>
-              <p className="text-lg text-gray-600 mb-4 font-medium">Founder & Managing Partner</p>
-              <p className="text-lg text-[#0A1F44] mb-6 font-semibold">Bhanushali Associates Law Firm</p>
+              <h3 className="text-2xl font-semibold text-[#D4AF37] mb-4">Advocate Karan Bhanushali</h3>
               <p className="text-gray-700 leading-relaxed mb-6">
                 With years of dedicated legal practice, Advocate Karan Bhanushali has established himself as a trusted name in the legal community.
                 His commitment to justice, combined with deep legal expertise across multiple domains, has helped countless clients navigate complex legal challenges successfully.
@@ -267,7 +250,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      <section id="contact-section" className="py-16 bg-gradient-to-br from-[#0A1F44] to-[#0D2952] text-white">
+      <section className="py-16 bg-gradient-to-br from-[#0A1F44] to-[#0D2952] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-6">
             Need Legal Assistance?
@@ -283,12 +266,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               Book Consultation
             </button>
             <a
-              href="https://wa.me/917021029328"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:+917021029328"
               className="bg-white text-[#0A1F44] px-8 py-4 rounded-md font-semibold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-2xl inline-flex items-center justify-center space-x-2"
             >
-              <span>Chat on WhatsApp</span>
+              <Phone className="h-5 w-5" />
+              <span>Call Now</span>
             </a>
           </div>
         </div>
