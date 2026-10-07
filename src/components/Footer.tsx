@@ -11,9 +11,9 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img src="/images/logo.png" alt="Bhanushali Associates" className="h-12 w-12 object-contain" />
+              <img src="/images/BAD4D664-54E2-4861-8A6C-243759E694CB.PNG" alt="Bhanushali Legal LLP" className="h-12 w-12 object-contain" />
               <div>
-                <h3 className="text-[#D4AF37] font-playfair text-lg font-bold">Bhanushali Associates</h3>
+                <h3 className="text-[#D4AF37] font-playfair text-lg font-bold">Bhanushali Legal LLP</h3>
                 <p className="text-white/80 text-xs">Law Firm</p>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         </div>
 
         <div className="border-t border-[#D4AF37]/20 mt-8 pt-8 text-center">
-          <p className="text-white/60 text-sm">© 2025 Bhanushali Associates. All Rights Reserved.</p>
+          <p className="text-white/60 text-sm">© 2025 Bhanushali Legal LLP. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

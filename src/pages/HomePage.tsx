@@ -36,7 +36,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     },
     {
       name: 'Priya Patel',
-      text: 'I was facing a difficult family law case. The team at Bhanushali Associates provided compassionate support and excellent legal guidance throughout the process.',
+      text: 'I was facing a difficult family law case. The team at Bhanushali Legal LLP provided compassionate support and excellent legal guidance throughout the process.',
       rating: 5
     },
     {
@@ -89,7 +89,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             <div className="h-1 w-20 bg-[#D4AF37] mx-auto mb-6"></div>
           </div>
           <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-2xl">
-            Bhanushali Associates<br />Law Firm
+            Bhanushali Legal LLP
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-[#D4AF37] font-light mb-8 italic drop-shadow-2xl">
             Your Trusted Legal Partner in Justice
@@ -124,7 +124,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             </h2>
             <div className="h-1 w-20 bg-[#D4AF37] mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Bhanushali Associates is a full-service law firm dedicated to delivering justice with integrity, diligence, and excellence.
+              Bhanushali Legal LLP is a full-service law firm dedicated to delivering justice with integrity, diligence, and excellence.
               We provide comprehensive legal services across multiple practice areas, ensuring our clients receive the best possible representation.
             </p>
           </div>
@@ -220,7 +220,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <div className="h-1 w-20 bg-[#D4AF37] mb-6"></div>
               <h3 className="text-2xl font-semibold text-[#D4AF37] mb-2">Adv. Karan Bhanushali</h3>
               <p className="text-lg text-gray-600 mb-4 font-medium">Founder & Managing Partner</p>
-              <p className="text-lg text-[#0A1F44] mb-6 font-semibold">Bhanushali Associates Law Firm</p>
+              <p className="text-lg text-[#0A1F44] mb-6 font-semibold">Bhanushali Legal LLP</p>
               <p className="text-gray-700 leading-relaxed mb-6">
                 With years of dedicated legal practice, Advocate Karan Bhanushali has established himself as a trusted name in the legal community.
                 His commitment to justice, combined with deep legal expertise across multiple domains, has helped countless clients navigate complex legal challenges successfully.

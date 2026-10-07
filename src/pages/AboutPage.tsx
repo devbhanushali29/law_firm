@@ -34,7 +34,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-4">
-              About Bhanushali Associates
+              About Bhanushali Legal LLP
             </h1>
             <div className="h-1 w-20 bg-[#D4AF37] mx-auto"></div>
           </div>
@@ -57,7 +57,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               </h2>
               <div className="h-1 w-20 bg-[#D4AF37] mb-6"></div>
               <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                Bhanushali Associates is a full-service law firm dedicated to delivering justice with integrity, diligence, and excellence.
+                Bhanushali Legal LLP is a full-service law firm dedicated to delivering justice with integrity, diligence, and excellence.
                 Founded by <span className="font-semibold text-[#0A1F44]">Advocate Karan Bhanushali</span>, the firm provides comprehensive legal
                 services in Civil, Criminal, Family, Corporate, and Property Law.
               </p>
@@ -79,7 +79,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
             </h3>
             <div className="h-1 w-20 bg-[#D4AF37] mx-auto mb-8"></div>
             <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-              Advocate Karan Bhanushali is the founder and principal attorney at Bhanushali Associates. With extensive experience
+              Advocate Karan Bhanushali is the founder and principal attorney at Bhanushali Legal LLP. With extensive experience
               in multiple areas of law, he has built a reputation as a trusted legal advisor and fierce advocate for his clients' rights.
             </p>
             <p className="text-gray-700 leading-relaxed mb-6 text-lg">

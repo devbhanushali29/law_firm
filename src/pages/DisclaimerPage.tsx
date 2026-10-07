@@ -23,7 +23,7 @@ export default function DisclaimerPage({ onNavigate }: DisclaimerPageProps) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-yellow-50 border-l-4 border-[#D4AF37] p-6 mb-8">
             <p className="text-gray-800 font-medium">
-              Please read this disclaimer carefully before using the services of Bhanushali Associates.
+              Please read this disclaimer carefully before using the services of Bhanushali Legal LLP.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ export default function DisclaimerPage({ onNavigate }: DisclaimerPageProps) {
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
               The information provided on this website is for general informational purposes only and does not constitute legal advice.
-              While we strive to ensure the accuracy and completeness of the information presented, Bhanushali Associates makes no
+              While we strive to ensure the accuracy and completeness of the information presented, Bhanushali Legal LLP makes no
               representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability,
               or availability of the information contained on this website.
             </p>
@@ -42,7 +42,7 @@ export default function DisclaimerPage({ onNavigate }: DisclaimerPageProps) {
               No Attorney-Client Relationship
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Visiting this website or communicating with Bhanushali Associates through this website does not establish an attorney-client
+              Visiting this website or communicating with Bhanushali Legal LLP through this website does not establish an attorney-client
               relationship. An attorney-client relationship is established only when a formal engagement letter or retainer agreement is
               signed by both parties. Please do not send any confidential information to us until such a relationship has been established.
             </p>
@@ -53,14 +53,14 @@ export default function DisclaimerPage({ onNavigate }: DisclaimerPageProps) {
             <p className="text-gray-700 leading-relaxed mb-6">
               The content on this website should not be considered as legal advice or a substitute for consultation with a qualified attorney.
               Every legal situation is unique and requires individual assessment. For specific legal advice tailored to your circumstances,
-              please contact Bhanushali Associates directly to schedule a consultation.
+              please contact Bhanushali Legal LLP directly to schedule a consultation.
             </p>
 
             <h2 className="font-playfair text-2xl font-bold text-[#0A1F44] mb-4 mt-8">
               Jurisdiction
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Bhanushali Associates primarily practices law in India and is governed by Indian legal regulations and the Bar Council of India.
+              Bhanushali Legal LLP primarily practices law in India and is governed by Indian legal regulations and the Bar Council of India.
               The information on this website is intended for individuals and entities within India. Laws vary by jurisdiction, and the
               information provided may not be applicable in other countries or regions.
             </p>
@@ -69,7 +69,7 @@ export default function DisclaimerPage({ onNavigate }: DisclaimerPageProps) {
               Third-Party Links
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              This website may contain links to third-party websites for your convenience and information. Bhanushali Associates does not
+              This website may contain links to third-party websites for your convenience and information. Bhanushali Legal LLP does not
               endorse or assume responsibility for the content, accuracy, or practices of these external sites. Accessing third-party links
               is at your own risk.
             </p>
@@ -78,7 +78,7 @@ export default function DisclaimerPage({ onNavigate }: DisclaimerPageProps) {
               Limitation of Liability
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              In no event shall Bhanushali Associates be liable for any direct, indirect, incidental, consequential, or punitive damages
+              In no event shall Bhanushali Legal LLP be liable for any direct, indirect, incidental, consequential, or punitive damages
               arising out of your access to or use of this website, or any information contained herein. This includes, but is not limited to,
               loss of data, loss of profits, or business interruption.
             </p>
@@ -95,7 +95,7 @@ export default function DisclaimerPage({ onNavigate }: DisclaimerPageProps) {
               Updates and Changes
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Bhanushali Associates reserves the right to modify, update, or remove any content on this website at any time without prior notice.
+              Bhanushali Legal LLP reserves the right to modify, update, or remove any content on this website at any time without prior notice.
               We recommend that you periodically review this disclaimer for any changes.
             </p>
 
@@ -103,7 +103,7 @@ export default function DisclaimerPage({ onNavigate }: DisclaimerPageProps) {
               Contact for Legal Assistance
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              If you require legal assistance or have specific questions about your legal situation, please contact Bhanushali Associates
+              If you require legal assistance or have specific questions about your legal situation, please contact Bhanushali Legal LLP
               directly through the contact information provided on this website. We will be happy to discuss your needs and determine how
               we can best assist you.
             </p>

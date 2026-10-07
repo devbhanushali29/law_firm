@@ -32,8 +32,8 @@ export default function DisclaimerPopup({ onAgree }: DisclaimerPopupProps) {
         }`}>
           <div className="md:w-1/3 bg-[#0A1F44] p-8 md:p-12 flex flex-col items-center justify-center text-center relative">
             <img
-              src="/images/logo.png"
-              alt="Bhanushali Associates"
+              src="/images/BAD4D664-54E2-4861-8A6C-243759E694CB.PNG"
+              alt="Bhanushali Legal LLP"
               className="h-40 w-40 object-contain mb-6"
             />
             <div className="absolute right-0 top-0 bottom-0 w-px bg-[#D4AF37] hidden md:block"></div>
@@ -46,7 +46,7 @@ export default function DisclaimerPopup({ onAgree }: DisclaimerPopupProps) {
 
             <div className="text-white/80 space-y-4 text-sm md:text-base leading-relaxed">
               <p>
-                The Bar Council of India does not permit solicitation of work and advertising by legal practitioners and advocates. By accessing the Bhanushali Associates Law Firm website (our "Site"), the user acknowledges that:
+                The Bar Council of India does not permit solicitation of work and advertising by legal practitioners and advocates. By accessing the Bhanushali Legal LLP website (our "Site"), the user acknowledges that:
               </p>
 
               <ul className="space-y-3 pl-0">

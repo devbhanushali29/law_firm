@@ -153,7 +153,7 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Bhanushali Associates Office Location"
+              title="Bhanushali Legal LLP Office Location"
             ></iframe>
           </div>
         </div>
