@@ -1,4 +1,5 @@
 import { Phone, Mail, ArrowRight, Scale, Target, Heart, Award } from 'lucide-react';
+import founderImage from '../assets/IMG_5563_2.jpg';
 
 interface AboutPageProps {
   onNavigate: (page: string) => void;
@@ -46,7 +47,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img
-                src="/images/IMG_5563_2.jpg"
+                src={founderImage}
                 alt="Adv. Karan Bhanushali"
                 className="rounded-lg shadow-2xl w-full object-cover"
               />
