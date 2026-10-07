@@ -1,5 +1,5 @@
 import { Phone, Mail, ArrowRight, Scale, Target, Heart, Award } from 'lucide-react';
-import founderImage from '../assets/IMG_5563_2.jpg';
+import founderImage from '../assets/IMG_5563_2 copy.jpg';
 
 interface AboutPageProps {
   onNavigate: (page: string) => void;
