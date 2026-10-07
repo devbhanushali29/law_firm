@@ -46,7 +46,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img
-                src="/images/founder.jpg"
+                src="/images/IMG_5563_2.jpg"
                 alt="Adv. Karan Bhanushali"
                 className="rounded-lg shadow-2xl w-full object-cover"
               />
