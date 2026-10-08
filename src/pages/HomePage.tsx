@@ -1,4 +1,5 @@
 import { Scale, Users, Shield, Heart, CheckCircle, Star, Phone, ArrowRight } from 'lucide-react';
+import founderImage from '../assets/IMG_5563_2 copy.jpg';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
@@ -208,7 +209,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/images/founder.jpg"
+                src={founderImage}
                 alt="Adv. Karan Bhanushali"
                 className="rounded-lg shadow-2xl w-full object-cover"
               />
